@@ -64,7 +64,7 @@ export function ExplanationCard(props: {
           },
           '1000': {
             label:
-              '0.1% per year (suggest if at increased risk or regularly interracting with people at increased risk)',
+              '0.1% per year (suggest if at increased risk or regularly interacting with people at increased risk)',
             multiplier: 0.1,
           },
         }}
@@ -116,7 +116,7 @@ const budgetConsumption = (
   repeatedEvent: boolean,
 ) => {
   if (repeatedEvent) {
-    return `Having this interraction regularly would use up
+    return `Having this interaction regularly would use up
         ~${fixedPointPrecision(
           ((points * 52) / budget) * 100,
         )}% of your annual risk
@@ -150,7 +150,7 @@ export function PointsDisplay(props: {
           {displayPoints(props.points / ERROR_FACTOR)} to{' '}
           {maybeGreater(props.points)}
           {displayPoints(props.points * ERROR_FACTOR)})
-          {props.repeatedEvent ? ' per week' : ''}
+          {props.repeatedEvent ? ' per week' : ' each time'}
         </h1>
       ) : (
         <h1>fill in calculator to see</h1>

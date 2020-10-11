@@ -1,10 +1,10 @@
 const title = 'Person Risk'
-
+const shortTitle = title
 const content = `
 
 **Person Risk** is the chance that the other person currently has COVID. This is based on overall prevalence in your area and their recent behaviors.
 
-So you’ve decided to meet a friend for lunch. You know the Activity Risk is 6% per hour (for an indoor unmasked lunch) and much less if you MODify your hangout. But the Activity Risk _assumes_ that they currently have COVID.
+So you’ve decided to meet a friend for lunch. You know the Activity Risk is 6% per hour (for an indoor unmasked lunch) and much less if you [MODify](3-covid-transmission#mod-hangouts-masked-outdoors-distance) your hangout. But the Activity Risk _assumes_ that they currently have COVID.
 
 What’s the chance that your friend actually has COVID? They aren’t coughing and they feel totally fine. Can you conclude they aren’t infected? Unfortunately, no. Roughly [55% of COVID transmissions](https://science.sciencemag.org/content/368/6491/eabb6936) happen when the person has _no symptoms_.[^4]
 
@@ -40,5 +40,5 @@ Skip ahead to [Putting it all together](11-putting-it-all-together), or read on 
      Note that this figure includes both _presymptomatic_ transmissions (where the person transmitting COVID will eventually show symptoms, usually within a few days, but hasn’t yet) and _asymptomatic_ transmissions (where the person transmitting will never show symptoms). Catching COVID from someone _presymptomatic_ is much more common: this accounts for about 50% of all transmissions, as opposed to _asymptomatic_ transmissions which account for only about 5%. The COVID discourse tends to muddy this fact somewhat. Asymptomatic infections are inherently harder to measure (because you probably won’t get tested if you don’t show symptoms), and there are indeed plenty of them. However, most of them don’t infect anyone else.
 `
 
-const post = { title, content }
+const post = { title, shortTitle, content }
 export default post
